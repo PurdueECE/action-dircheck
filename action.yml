@@ -2,9 +2,9 @@ name: "action-pylint"
 description: "pylint GH Action"
 author: "Purdue ECE"
 inputs:
-  path:
-    description: "path to be linted"
-    default: "."
+  paths:
+    description: "Comma-separated list of paths to be checked"
+    required: true
 runs:
   using: "docker"
   image: "Dockerfile"

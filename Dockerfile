@@ -1,5 +1,10 @@
-FROM alpine:3.15.0
+FROM python:3
 
-COPY entrypoint.sh /entrypoint.sh
+WORKDIR /usr/src/app
 
-ENTRYPOINT ["/entrypoint.sh"]
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+CMD [ "python", "main.py" ]
