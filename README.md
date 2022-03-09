@@ -1,14 +1,12 @@
-# pylint Action
-
-This action will run pylint in the specified directory.
+# Directory Checking Action
+This action will check the directory structure of a repository.
 
 # Usage
 ```yaml
-- uses: PurdueECE/action-pylint@main
+- uses: PurdueECE/action-dircheck@main
   with:
-    # Path to be linted
-    # Default: .
-    path: ''
+    # Comma-separated list of paths to be checked (required)
+    path: 'src/folder1,src/folder2/file1'
 ```
 
 # Testing
