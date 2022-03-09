@@ -1,4 +1,4 @@
-name: Test - Single Folder
+name: Test - Multi Folder
 on: [push]
 jobs:
   build:
@@ -7,4 +7,4 @@ jobs:
       - uses: actions/checkout@v3
       - uses: ./
         with:
-          paths: "test/single_folder/folder1"
+          paths: "test/multi_folder/folder1,test/multi_folder/folder2"
