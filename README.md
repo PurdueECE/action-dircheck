@@ -3,7 +3,7 @@ This action will check the directory structure of a repository.
 
 # Usage
 ```yaml
-- uses: PurdueECE/action-dircheck@main
+- uses: PurdueECE/action-dircheck@v1
   with:
     # Comma-separated list of paths to be checked (required)
     path: 'src/folder1,src/folder2/file1'
