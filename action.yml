@@ -1,5 +1,5 @@
-name: "action-pylint"
-description: "pylint GH Action"
+name: "action-dircheck"
+description: "Action to check directory structure"
 author: "Purdue ECE"
 inputs:
   paths:
